@@ -1,0 +1,158 @@
+//--Подключение файлов--
+@import "vars";
+@import "null";
+@import "libs";
+@import "fonts";
+// --
+
+// ==Стили==
+
+// --Разметка--
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    background-color: $g-black;
+}
+.container {
+    max-width: 1920px;
+    min-width: $minwidth;
+    margin: 0 auto;
+    z-index: 2;
+}
+.flex__content {
+    flex: 1 1 100%;
+    min-width: 0;
+}
+.flex-col-2 {
+    flex: 0 0 50%;
+    min-width: 0;
+}
+.flex-col-3 {
+    flex: 0 0 33.3333%;
+    min-width: 0;
+}
+.flex-col-4 {
+    flex: 0 0 25%;
+    min-width: 0;
+}
+//--
+
+// --Основные стили--
+body.lock{
+    overflow: hidden;
+}
+.header {
+    position: relative;
+    z-index: 2;
+    &__row{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+    &__logo{
+        flex: 0 0 50%;
+        &-link{
+
+        }
+        &-img{
+            width: 127px;
+            height: 127px;
+        }
+    }
+    &__nav{
+        flex: 0 0 45%;
+    }
+    &__list{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        padding-right: 88px;
+        &-link{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            &:hover{
+                color: #ADC62C;
+                transition: 0.5s all;
+            }
+        }
+        &-link:nth-child(3){
+            color: #ADC62C;
+        }
+    }
+    &__item:last-child{
+        padding-right: 73px;
+    }
+    &__burger{
+        border: 1px solid #FFFFFF;
+        border-radius: 100%;
+        padding: 16px;
+        &:hover{
+            border-color: #ADC62C;
+            transition: 0.5s all;
+        }
+    }
+    &__menu{
+        display: none;
+        &-close{
+
+        }
+        &-content{
+
+        }
+        &-logo{
+
+        }
+        &-nav{
+
+        }
+        &-list{
+
+        }
+        &-item{
+
+        }
+        &-link{
+
+        }
+        &-social{
+            &-item{
+
+            }
+            &-link{
+
+            }
+        }
+    }
+}
+.explore{
+    &__row{
+
+    }
+}
+// Слайдер
+.slider{
+    position: relative;
+    z-index: 1;
+    &__first{
+
+    }
+    &__second{
+        padding: 0 55px;
+    }
+    &__third{
+
+    }
+    &__img{
+ 
+    }
+}
+//--
+
+@import "media";

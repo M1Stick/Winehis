@@ -38,12 +38,15 @@
 //--
 
 // --Основные стили--
+body{
+    cursor: url(../img/cursor.png),default;
+}
 body.lock{
     overflow: hidden;
 }
 .header {
     position: relative;
-    z-index: 2;
+    z-index: 100;
     &__row{
         width: 100%;
         display: flex;
@@ -136,21 +139,261 @@ body.lock{
 
     }
 }
+.history{
+    width: 100%;
+    min-height: 160vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5)), url(../img/second_screen/history-bg.jpg);
+    background-repeat: no-repeat;
+    &__row{
+
+    }
+    &__background{
+
+    }
+    &__leaf-1{
+        position: absolute;
+        top: 165%;
+        left: 29%;
+    }
+    &__leaf-2{
+        position: absolute;
+        top: 209%;
+        right: 30.3%;
+    }
+    &__grape-1{
+        position: absolute;
+        left: 0;
+        top: 135%;
+    }
+    &__grape-2{
+        position: absolute;
+        right: 0;
+        top: 124%;
+    }
+    &__single-grape-1{
+        position: absolute;
+        top: 208.5%;
+        left: 13%;
+    }
+    &__single-grape-2{
+        position: absolute;
+        top: 174%;
+        right: 24%;
+    }
+    &__elipse{
+        position: absolute;
+        top: 170%;
+        left: 33.5%;
+        z-index: 10;
+    }
+    &__circle{
+        position: absolute;
+        top: 185%;
+        left: 40.7%;
+        z-index: 10;
+    }
+    &__year{
+        position: absolute;
+        top: 195%;
+        left: 44.5%;
+        z-index: 10;
+    }
+    &__text{
+        position: relative;
+        z-index: 101;
+        font-family: Roboto,sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        padding-top: 69rem;
+        padding-right: 3rem;
+        text-shadow: 0 0 1 black;
+    }
+    &__link{
+        text-decoration-line: underline;
+        color: #CCEE1E;
+    }
+}
 // Слайдер
 .slider{
     position: relative;
     z-index: 1;
-    &__first{
-
-    }
-    &__second{
-        padding: 0 55px;
-    }
-    &__third{
-
+    &__item{
+        height: 893px;
+        padding: 0 27.5px;
     }
     &__img{
- 
+        position: relative;
+        z-index: 3;
+    }
+    &__single-grape{
+        position: absolute;
+        top: 34%;
+        left: 19%;
+        z-index: 10;
+    }
+    &__second-grape{
+        position: absolute;
+        top: 60%;
+        right: 22%;
+        z-index: 10;
+    }
+    &__third-grape{
+        position: absolute;
+        top: 25%;
+        right: 0%;
+        z-index: 11;
+    }
+    &__fourth-grape{
+        position: absolute;
+        top: 65%;
+        left: 0%;
+        z-index: 10;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+    &__grape{
+        position: absolute;
+        top: 19%;
+        left: 32.5%;
+        z-index: 0;
+    }
+    &__bottle{
+        position: absolute;
+        top: 40%;
+        left: 42%;
+        z-index: 0;
+    }
+    &__head{
+        position: absolute;
+        top: 25%;
+        z-index: 10;
+        font-family: $lincoln;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 109px;
+        line-height: 109px;
+        text-align: center;  
+        color: #FFFFFF;
+    }
+    &__text{
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-family: $roboto;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: #D3D3D3;
+    }
+    &__number{
+        position: absolute;
+        top: 85%;
+        left: 7%;
+        z-index: 11;    
+        font-family: $lincoln;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 66px;
+        line-height: 66px;
+        text-align: center;
+        color: #ADC62C;
+    }
+    &__slash{
+        position: absolute;
+        top: 85%;
+        left: 10%;
+        z-index: 11; 
+        font-family: $lincoln;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 66px;
+        line-height: 66px;
+        text-align: center;
+        color: #818181;
+    }
+    &__numberall{
+        position: absolute;
+        top: 86.7%;
+        left: 11.5%;
+        z-index: 11; 
+        font-family: $lincoln;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 38px;
+        text-align: center;
+        color: #818181;
+    }
+    & .slick-arrow{
+        position: absolute;
+        top: 90%;
+        z-index: 10;
+        font-size: 0;
+        cursor: pointer;
+    }
+    & .slick-arrow.prev{
+        left: 83%;
+    }
+    & .slick-arrow.next{
+        left: 86%;
+    }
+}
+.about{
+    width: 100%;
+    min-height: 100vh;
+    background:  url(../img/third_screen/about_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__linear{
+        width: 100%;
+        min-height: 100vh;
+        background-color: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__row{
+
+    }
+    &__leaf{
+
+    }
+    &__grape{
+
+    }
+    &__glass{
+        &-2{
+
+        }
+    }
+    &__content{
+
+    }
+    &__head{
+        font-family: $lincoln;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 86px;
+        line-height: 86px;
+        text-align: center;
+        color: #ADC62C;
+    }
+    &__text{
+        font-family: $roboto;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
     }
 }
 //--

@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
 @font-face {
-  font-family: 'Abraham Lincoln';
-    src:url(../fonts/AbrahamLincoln.ttf) format('ttf');
-    font-display: fallback;
+  font-family: 'fontd6ce188b658585742fc8f592e0107086';
+      src:url('https://nomail.com.ua/files/eot/d6ce188b658585742fc8f592e0107086.eot?#iefix') format('embedded-opentype'),
+          url('https://nomail.com.ua/files/woff/d6ce188b658585742fc8f592e0107086.woff') format('woff'),
+          url('https://nomail.com.ua/files/woff2/d6ce188b658585742fc8f592e0107086.woff2') format('woff2');
   }
+  
+  @font-face { 
+    font-family: 'AbrahamLincoln';  
+    src: local('AbrahamLincoln'), 
+    url('https://nomail.com.ua/files/woff/d6ce188b658585742fc8f592e0107086.woff') format('woff'); }
+  

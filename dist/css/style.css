@@ -731,7 +731,7 @@ body.lock {
 
 .history {
   width: 100%;
-  min-height: 160vh;
+  height: 1495px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../img/second_screen/history-bg.jpg);
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5)), url(../img/second_screen/history-bg.jpg);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5)), url(../img/second_screen/history-bg.jpg);
@@ -739,65 +739,66 @@ body.lock {
 }
 
 .history__leaf-1 {
-  position: absolute;
-  top: 165%;
-  left: 29%;
+  position: relative;
+  top: 40rem;
+  left: 35rem;
 }
 
 .history__leaf-2 {
-  position: absolute;
-  top: 209%;
-  right: 30.3%;
+  position: relative;
+  top: 65rem;
+  left: 54rem;
 }
 
 .history__grape-1 {
-  position: absolute;
-  left: 0;
-  top: 135%;
+  position: relative;
+  top: 23.5rem;
+  right: 29.5rem;
 }
 
 .history__grape-2 {
-  position: absolute;
-  right: 0;
-  top: 124%;
+  position: relative;
+  right: -34rem;
+  top: 16rem;
 }
 
 .history__single-grape-1 {
-  position: absolute;
-  top: 208.5%;
-  left: 13%;
+  position: relative;
+  top: 66rem;
+  right: 70rem;
 }
 
 .history__single-grape-2 {
-  position: absolute;
-  top: 174%;
-  right: 24%;
+  position: relative;
+  right: 20rem;
+  top: 45rem;
 }
 
 .history__elipse {
-  position: absolute;
-  top: 170%;
-  left: 33.5%;
-  z-index: 10;
+  position: relative;
+  top: -37.5rem;
+  left: 40rem;
+  z-index: 100;
 }
 
 .history__circle {
-  position: absolute;
-  top: 185%;
-  left: 40.7%;
+  position: relative;
+  top: -28.5rem;
+  right: -12.3rem;
   z-index: 10;
 }
 
 .history__year {
-  position: absolute;
-  top: 195%;
-  left: 44.5%;
+  position: relative;
+  top: -22.5rem;
+  right: 2.5rem;
   z-index: 10;
 }
 
 .history__text {
   position: relative;
-  z-index: 101;
+  top: -48rem;
+  left: -1rem;
   font-family: Roboto,sans-serif;
   font-style: italic;
   font-weight: 300;
@@ -805,9 +806,7 @@ body.lock {
   line-height: 30px;
   text-align: center;
   color: #fff;
-  padding-top: 69rem;
-  padding-right: 3rem;
-  text-shadow: 0 0 1 black;
+  z-index: 100;
 }
 
 .history__link {
@@ -973,7 +972,7 @@ body.lock {
 .about {
   width: 100%;
   min-height: 100vh;
-  background: url(../img/third_screen/about_bg.png);
+  background: rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -982,7 +981,40 @@ body.lock {
 .about__linear {
   width: 100%;
   min-height: 100vh;
-  background-color: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: url(../img/third_screen/about_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__leaf {
+  position: relative;
+  left: 50rem;
+  top: 10rem;
+}
+
+.about__grape {
+  position: relative;
+  left: 27.5rem;
+  top: 22.5rem;
+}
+
+.about__glass {
+  position: relative;
+  right: 33rem;
+  top: 38rem;
+  z-index: 100;
+}
+
+.about__glass-2 {
+  position: relative;
+  top: 28rem;
+  left: 45rem;
+  z-index: 100;
+}
+
+.about__content {
+  position: relative;
+  bottom: 20rem;
 }
 
 .about__head {
@@ -1003,4 +1035,165 @@ body.lock {
   line-height: 30px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.about__btn {
+  position: relative;
+  top: -15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__btn-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #ADC62C;
+  border-radius: 38.5px;
+  padding: 24px 40px;
+}
+
+.about__btn-link:hover {
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  color: #2E2E2E;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2.6%, #ADC62C), color-stop(96.75%, #E2FE52));
+  background: -o-linear-gradient(bottom, #ADC62C 2.6%, #E2FE52 96.75%);
+  background: linear-gradient(360deg, #ADC62C 2.6%, #E2FE52 96.75%);
+}
+
+.footer {
+  width: 100%;
+  background: #000000;
+  position: relative;
+  z-index: 101;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 73px 86px;
+}
+
+.footer__copyright-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #838383;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__content-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #838383;
+  padding-right: 51px;
+}
+
+.footer__name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #838383;
+  background: #000000;
+  border: 1px solid #4E4E4E;
+  border-radius: 39px;
+  padding-right: 21px;
+  padding-left: 36px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  margin-right: 21px;
+}
+
+.footer__phone {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #838383;
+  background: #000000;
+  border: 1px solid #4E4E4E;
+  border-radius: 39px;
+  padding-left: 36px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  margin-right: 21px;
+}
+
+.footer__btn {
+  background: #383838;
+  border-radius: 39px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #838383;
+  padding: 19px 56px;
+  text-align: center;
+}
+
+.footer__btn:hover {
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2.6%, #ADC62C), color-stop(96.75%, #E2FE52));
+  background: -o-linear-gradient(bottom, #ADC62C 2.6%, #E2FE52 96.75%);
+  background: linear-gradient(360deg, #ADC62C 2.6%, #E2FE52 96.75%);
+}
+
+.footer__development-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #838383;
+}
+
+.footer__development-text a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ADC62C;
 }

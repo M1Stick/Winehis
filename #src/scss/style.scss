@@ -19,22 +19,6 @@
     margin: 0 auto;
     z-index: 2;
 }
-.flex__content {
-    flex: 1 1 100%;
-    min-width: 0;
-}
-.flex-col-2 {
-    flex: 0 0 50%;
-    min-width: 0;
-}
-.flex-col-3 {
-    flex: 0 0 33.3333%;
-    min-width: 0;
-}
-.flex-col-4 {
-    flex: 0 0 25%;
-    min-width: 0;
-}
 //--
 
 // --Основные стили--
@@ -64,7 +48,7 @@ body.lock{
         }
     }
     &__nav{
-        flex: 0 0 45%;
+        flex: 0 0 44%;
     }
     &__list{
         display: flex; 
@@ -92,44 +76,90 @@ body.lock{
     &__item:last-child{
         padding-right: 73px;
     }
-    &__burger{
-        border: 1px solid #FFFFFF;
-        border-radius: 100%;
-        padding: 16px;
-        &:hover{
-            border-color: #ADC62C;
-            transition: 0.5s all;
+    &__burger{      
+        &-img{
+            border: 1px solid #FFFFFF;
+            border-radius: 100%;
+            padding: 17px;
+            &:hover{
+                border-color: #ADC62C;
+                transition: 0.5s all;
+            }
         }
     }
-    &__menu{
-        display: none;
+    &__menu{  
+        width: 0;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        background-color: #000000;
+        &-component{
+            position: relative;
+            z-index: 200;
+        }
         &-close{
-
+            position: relative;
+            z-index: 100;
+            top: 2rem;
+            left: 2rem;
         }
         &-content{
-
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         &-logo{
-
+            width: 82.5px;
+            height: 22px;
+            padding-top: 123px;
         }
         &-nav{
-
+            padding: 260px 148px 205px;
         }
         &-list{
-
+            list-style: none;
+            text-align: center;
         }
         &-item{
-
+            padding-bottom: 48px;
+            &:last-child{
+                padding-bottom: 0px;
+            }
         }
         &-link{
-
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            &:hover{
+                transition: 1s all;
+                color: #ADC62C;
+            }
         }
         &-social{
+            padding-bottom: 159px;
             &-item{
-
+                padding-bottom: 25px;
+                &:last-child{
+                    padding-bottom: 0px;
+                }
             }
             &-link{
-
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                color: #787878;    
             }
         }
     }

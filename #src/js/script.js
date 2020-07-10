@@ -1,6 +1,13 @@
 $(document).ready(function() {
-  $('.header__order').click(function() {
+  $('.header__burger').click(function() {
+    $('.header__menu').css('width','22%');
     $('body').toggleClass('lock');
+  })
+});
+$(document).ready(function() {
+  $('#close').click(function() {
+    $('.header__menu').css('width','0');
+    $('body').removeClass('lock');
   })
 });
 $(document).ready(function() {

@@ -11,11 +11,6 @@ $(document).ready(function() {
   })
 });
 $(document).ready(function() {
-  $('.price__content-order').click(function() {
-    $('body').toggleClass('lock');
-  })
-});
-$(document).ready(function() {
   $('.header__popup-close').click(function() {
     $('body').removeClass('lock');
   })
@@ -28,8 +23,6 @@ $(document).bind( 'mousewheel', function (e) {
        scrollTop : nt 
    } , 500 , 'easeInOutCubic' );  
 });
-
-
 
 $(document).ready(function(){
     $('.slider').slick({

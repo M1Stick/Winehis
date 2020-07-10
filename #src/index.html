@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="eng">
 <head>
     <meta charset="UTF-8">
@@ -28,12 +28,51 @@
                                 <a class="header__item-link" href="#">History</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__item-link" href="#">Call me plz</a>
+                                <a class="header__item-link" href="#header-popup">Call me plz</a>
                             </li>
                             <li class="header__item">
                                 <a class="header__item-link" href="tel:++359876543210">+35 987 654 32 10</a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="header__popup" id="header-popup">
+                        <div class="header__popup-body">
+                            <div class="header__popup-content">
+                                <div class="header__popup-title">
+                                    <a class="header__popup-close" href="#">
+                                        <img class="header__popup-img" src="./img/menu/close.svg" alt="close popup">
+                                    </a>
+                                </div>
+                                <div class="header__popup-text">
+                                    <form class="header__form" action="send.php" method="post">
+                                        <input class ="header__popup-input" type="text" id="name" name="user__name" placeholder="Name">
+                                        <input class ="header__popup-input" type="tel" id="phone" name="user__phone" placeholder="Phone">
+                                        <div class="header__popup-age">
+                                            <label class="header__popup-age-label">Your Age:</label>
+                                            <label class="header__popup-age-radio-label" for="radio1">10-20
+                                                <input class="header__popup-age-radio" type="radio"  checked='checked' name="radio" value="10-20" id="radio1">
+                                                <span></span>
+                                            </label>
+                                            <label class="header__popup-age-radio-label" for="radio2">20-30
+                                                <input class="header__popup-age-radio" type="radio" name="radio" value="20-30" id="radio2">
+                                                <span></span>
+                                            </label>
+                                            <label class="header__popup-age-radio-label" for="radio3">30-40
+                                                <input class="header__popup-age-radio" type="radio" name="radio" value="30-40" id="radio3">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="header__popup-buttons">
+                                                <label><input class ="header__popup-input-draggable" type="file" accept=".jpg, .jpeg, .png" id="fl_inp">
+                                                    Download your photo:
+                                                    <img src="./img/cloud-download.png" alt="cloud">
+                                                </label>
+                                            <input class ="header__popup-input-btn" type="submit" value="Send" id="btn_submit">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <a class="header__burger" href="#">
                         <img class="header__burger-img" src="./img/header/burger.svg" alt="header burger">
